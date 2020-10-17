@@ -104,6 +104,51 @@
 <!-- section 4 end here -->
 
 
+<!-- section 5 start here  -->
+
+<section class="sec5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 ">
+
+				<div class='sec5_1'>
+					<h2 class="sec5_5">کیا آپ ہوشیاری سے کاشت کاری کرنا چاھتے ہیں؟</h2>
+					<h3 class='sec5_h3_1'>KITOVU کی موبایل ایپ ڈاونلوڈ کریں</h3>
+					<button class="btn  sec5-btn"> <img title='گوگل پلے' src="{%static 'images/andriod.png' %}" alt="download our app"></button>
+				</div>
+			</div>
+
+			<div class="col-md-6" >
+					<div class='sec5_form_p1'>
+						<h2>کیا آپ ہم سے کچھ جاننا چاھتے ہیں؟</h2>
+							<p>   اپنا پیغام درج کریں </p>
+							<h1>{{bad}}</h1>
+					</div>
+
+
+					<form class='sec5_form' action="" method="POST">
+					  {% csrf_token %}
+						<input class='sec5_input' type="text" name="author" id="" placeholder='نام'>
+						<input class='sec5_input' type="tel" name="phone" id="" placeholder=' فون نمبر'>
+						<textarea class='sec5_textarea' name='message'>یہاں ایک پیغام چھوڑ دیں </textarea>
+						<input class='sec5_submit btn btn-primary' type="submit" value="جمع کرائیں">
+					</form>
+
+					<div class='sec5_form_p2'>
+						<p class="sec5_form1">کال کرنے کے لیے "نمبر:0747748593020" پر رابطہ کریں</p>
+						<p class="sec5_form1">   یا info@kitovu.pk پرای میل کریں </p>
+					</div>
+
+				</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- section 5 end here -->
+
+
 
 
 
