@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 
 from home.views import *
+from home.views import test
 
 urlpatterns = [
 	path('', home, name="home"),
 	path('nav/', nav, name="nav"),
+    path('test/', test, name='test'),
     path('admin/', admin.site.urls),
 ]

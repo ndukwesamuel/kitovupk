@@ -126,13 +126,14 @@
 					</div>
 
 
-					<form class='sec5_form' action="" method="POST">
-					  {% csrf_token %}
-						<input class='sec5_input' type="text" name="author" id="" placeholder='نام'>
-						<input class='sec5_input' type="tel" name="phone" id="" placeholder=' فون نمبر'>
-						<textarea class='sec5_textarea' name='message'>یہاں ایک پیغام چھوڑ دیں </textarea>
-						<input class='sec5_submit btn btn-primary' type="submit" value="جمع کرائیں">
+					<form class='sec5_form' action="" method="POST">{% csrf_token %}
+					  
+						<input class='sec5_input' type="text" name="author" value="author" id="" placeholder='نام'>
+						<input class='sec5_input' type="tel" value='phone' name="phone"  id="" placeholder=' فون نمبر'>
+						<textarea class='sec5_textarea' name='message' value='message'>یہاں ایک پیغام چھوڑ دیں </textarea>
+						<input class='sec5_submit btn btn-primary' type="submit" value="submit">
 					</form>
+
 
 					<div class='sec5_form_p2'>
 						<p class="sec5_form1">کال کرنے کے لیے "نمبر:0747748593020" پر رابطہ کریں</p>
