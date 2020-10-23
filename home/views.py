@@ -31,11 +31,11 @@ def home(request):
 		form = postform
 
 	else:
-		bad = form.errors
+		form.errors
 		
 
-	context = {'form':form, 'bad':bad}
+	context = {'form':form,}
 
-	return render(request, 'index.html' , context)
+	return render(request, 'index.html' , context, )
 
 

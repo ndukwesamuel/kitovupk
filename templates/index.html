@@ -122,11 +122,12 @@
 					<div class='sec5_form_p1'>
 						<h2>کیا آپ ہم سے کچھ جاننا چاھتے ہیں؟</h2>
 							<p>   اپنا پیغام درج کریں </p>
-							<h1>{{bad}}</h1>
+							<h1>{{form.errors}}</h1>
 					</div>
 
 
-					<form class='sec5_form' action="" method="POST">{% csrf_token %}
+					<form class='sec5_form' action="" method="POST">
+						{% csrf_token %}
 					  
 						<input class='sec5_input' type="text" name="author" value="author" id="" placeholder='نام'>
 						<input class='sec5_input' type="tel" value='phone' name="phone"  id="" placeholder=' فون نمبر'>
